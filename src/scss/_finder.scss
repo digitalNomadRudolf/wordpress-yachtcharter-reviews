@@ -1,0 +1,95 @@
+.yt-find {
+
+    .heading {
+        height: 35px;
+        background: rgba(10,27,64,.9);
+        float: left;
+        padding: 0 20px;
+        color: white;
+        line-height: 45px;
+        font-family: $raleway;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: .15em;
+    }
+
+    form.yt-search {
+        width:100%;
+        margin:0 auto;
+
+        fieldset {
+            width: 100%;
+            background: rgba(10,27,64,.9);
+            padding: 0 0 0 37px;
+            border: none;
+            /* height:80px; */
+        }
+
+        .yt-search__col {
+            float: left;
+            margin:1em;
+            margin-left: 0;
+            margin-bottom: -10px;
+
+            @media screen and (max-width: 991px) {
+                width: 50%;
+            }
+        } 
+
+        label {
+            display:none;
+        }
+
+        .big-wrap {
+            position: relative;
+            width: 35%;
+
+            @media screen and (max-width: 991px) {
+                width: 50%;
+            }
+            
+        }
+
+        .guest-wrap {
+            width:20%;
+
+            @media screen and (max-width: 991px) {
+                width: 40%;
+            }
+        }
+
+        .find-wrap {
+            float: left;
+            margin:1em;
+            margin-left:0;
+            width:14%;
+
+            @media screen and (min-width: 1200px) {
+                width: 17%;
+            }
+
+            @media screen and (max-width: 991px) {
+                width: 27%;
+            }
+
+                input[type=submit] {
+                    border: none;
+                    height: 47px;
+                    width: 150%;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 1.2em;
+                    background: #6ECAFD;
+                    color: white;
+                    font-weight: 800;
+                }
+        }
+
+        select.yt-search--guests,
+        select.yt-search--dest,
+        select.yt-search--btype {
+                padding: .7em;
+                color: grey;
+                width: 100%;
+            }
+    }
+}

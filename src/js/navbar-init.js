@@ -1,0 +1,1 @@
+var menu = new cbpTooltipMenu( document.getElementById( 'menu' ) );

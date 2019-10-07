@@ -1,0 +1,360 @@
+.news-header {
+    background: linear-gradient(
+        rgba(10,27,64,.5),
+        rgba(10,27,64,.5)
+    ),    
+      /* url('https://images.unsplash.com/photo-1498811107811-a20a5be82dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80') no-repeat*/;
+    height: 35vh;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: bottom !important;     
+}
+
+.row.undo-sidemarge {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.yt-news {
+
+
+    .title-col {
+        margin-top: -10em;
+        
+        h1 {
+            letter-spacing: .5em;
+        }
+    }
+
+    .news-left {
+
+
+        .news-columns {
+
+
+            .outer-full {
+                margin: 1em 0;
+
+                .title {
+
+                    h1 {
+
+                        a {
+                            text-decoration: none;
+                            font-size: 1em;
+                            font-weight: 800;
+                            color: #000;
+                            letter-spacing: 0em;
+                            padding: .3em 0;
+                            display: block;
+                        }
+                    }
+                }
+
+                .inner-col {
+
+                    .feat-art {
+
+                        .img-wrap {
+                            width: 100%;
+                            height: 243px;
+
+                            a {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+
+                        p.title {
+                            margin: .1em 0;
+
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                                font-weight: 800;
+                                font-size: 1.3em;
+                                display: block;
+                                padding-top: .5em;
+                            }
+                        }
+
+                        p.preview {
+                            font-size: 1.1em;
+                            font-weight: 400;
+                            font-family: raleway;
+                            margin: .5em 0;
+                        }
+
+                        p.date {
+                            font-size: .7em;
+                            color: dimgrey;
+                        }
+                    }
+                }
+
+                button.goto-cat {
+                    border: 0;
+                    padding: 1em;
+                    color: #fff;
+                    background: #0A1B40;
+                    margin-left: auto;
+                    display: block;
+                    margin-top: 2em;
+                    transition: all .2s;
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+
+                        &:hover {
+                            background: #02639D;
+                        }
+                }
+            }
+        }
+    }
+
+    .news-aside {
+        padding-top: 6em;
+
+        .news-right {
+            padding: 0 40px;
+
+            .right-col {
+
+                .special-deal {
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+                    transition: all .2s;
+                    overflow: hidden;
+
+                    
+                    a.s-deal-link {
+
+                        img.s-deal-img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: all .2s;
+                        }
+
+                        p.s-deal-title {
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                            padding: 0 .4em;
+                            color: #fff;
+                            z-index: 2;
+                            font-size: 1.6em;
+                            line-height: 1.2;
+                            font-weight: 800;
+                            text-transform: capitalize;
+                            letter-spacing: 8px;
+                            transition: all .2s;
+                        }
+
+                        &::after {
+                            content: ""; 
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-image: linear-gradient(120deg, #47A3DA, #47A3DA);
+                            opacity: .7;
+                        }
+                    }
+
+                    &:hover img {
+                        transform: scale(2);
+                    }
+                    
+                }
+
+                .best-rentals {
+                    margin: 3em 0;
+                    background: rgba(10, 27, 64, 0.06);
+                    border: 4px solid #0A1B40;
+
+                    p.title {
+                        font-weight: 800;
+                        background: #0A1B40;
+                        color:#fff;
+                        text-align: center;
+                        font-size: 1.3em;
+                        margin: 0;
+                        padding: 10px 4px 10px 14px;
+                        width: 100%;
+                    }
+
+                    ul.rentals-list {
+                        padding: 0 .5em;
+                        margin-top: 1.5em;
+
+                        li {
+
+                            .rental-img-wrap {
+                                width: 100%;
+                                height: 200px;
+                                position: relative;
+                                margin-bottom: 1.5em;
+
+                                    a.rental--link {
+
+                                        img.rental-img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+
+                                        .overlay-title {
+                                            position: absolute;
+                                            top: 0px;
+                                            padding: 0 1em;
+                                            background: black;
+                                            color: #fff;
+                                            font-weight: 400;
+                                            font-family: raleway;
+                                        }
+                                    }
+                            }
+
+                            .rental-caption {
+                                position: absolute;
+                                bottom: 0;
+                                background: rgba(10,27,64,.9);
+                                color: #fff;
+                                padding: 1em;
+                                font-size: .8em;
+                                font-family: raleway;
+                                width: 100%;
+
+                                p {
+
+                                }
+                            }
+                        }
+                    }
+
+                    button.goto-rentals {
+                        text-align: right;
+                        display: block;
+                        background: #569BC5;
+                        border: 0;
+                        padding: .4em;
+                        color: #fff;
+                        font-weight: 800;
+                        font-size: 1.3em;
+                        letter-spacing: 0px;
+
+                        &:hover {
+                            background: #fff;
+                    
+                            a {
+                                color: #0D1E3F;
+                            }
+                        }
+                    }
+                }
+
+                .newsletter-wrap-box {
+
+                    .nl-bg-area {
+
+                        .nl-title {
+
+                            h3 {
+
+                            }
+                        }
+
+                        .nl-desc {
+
+                            p {
+
+                            }
+                        }
+
+                        .nl-form-wrap {
+
+                            form#nl-form {
+                                position: relative;
+
+                                input.email {
+                                    height: 2.65em;
+                                    border: solid 1px #0A1B40;
+                                    padding: 0 1em;
+                                    width: 100%;
+                                }
+
+                                button[type="submit"] {
+                                    border: 0px;
+                                    padding: 0.55em;
+                                    background: cornflowerblue;
+                                    color: #fff;
+                                    font-family: raleway;
+                                    position: absolute;
+                                    right: 1px;
+                                    top: 1px;
+                                    height: 2.52em;
+                                    transition: all .2s;
+
+                                        &:hover {
+                                            background:#0A1B40;
+                                        }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+body.page-template-newsletter, body.error404 {
+    
+    .yt-news .news-aside {
+        padding-top: 1em;
+    }
+
+    .news-columns {
+
+    .yt-news .news-left .news-columns .outer-full {
+        margin: 1em 1em;
+    }
+
+    form#searchform {
+        margin: 0 1em;
+        position: relative;
+        width: 100%;
+
+        input.search-field {
+            width: 100%;
+            padding: .3em;
+            border: 1px solid #0A1B40;
+        }
+        button[type=submit].button {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            border: 0;
+            height: 33px;
+            width: 88px;
+            transition: all .2s;
+
+            &:hover {
+                background: #0A1B40;
+                color: #fff;
+            }
+        }
+    }
+  }
+}

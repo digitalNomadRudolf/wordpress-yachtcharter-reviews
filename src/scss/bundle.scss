@@ -1,0 +1,21 @@
+@import './components/slider.scss';
+@import './components/base';
+@import 'vars.scss';
+@import 'nav';
+@import 'search';
+@import 'news';
+@import 'hero';
+@import 'finder';
+@import 'home';
+@import 'landing';
+@import 'yacht-video';
+@import 'carousel';
+@import 'destinations';
+@import 'footer';
+
+
+$colour: lightblue;
+
+body {
+  background-color: $colour;
+}

@@ -1,0 +1,237 @@
+.hero-landing {
+    /* background: url('https://images.unsplash.com/photo-1501771924607-209f42a6e7e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80') no-repeat; */
+    height: 85vh;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center center !important;
+
+        .inner-txt {
+
+            h2 {
+                font-weight: 900;
+                color: #fff;
+                font-size: 3.5em;
+                text-align: center;
+                width: 100%;
+                text-shadow: 3px 1px 10px #000000;
+                text-transform: uppercase;
+                font-family: $raleway;
+            }
+            
+            span.join {
+                color: #92C4F3;
+            }
+
+            button.read-more {
+                display: block;
+                padding: 1em 2em;
+                border: 0;
+                background: #0A1B40;
+                color: white;
+                font-weight: 800;
+                font-family: raleway;
+                font-size: 1.3em;
+                margin: auto;
+                margin-top: 1em;
+                transition: all .2s;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+
+                        &:hover {
+                            color: #0A1B40;
+                        }
+                    }
+
+                    &:hover {
+                        background:#fff;
+                        color: #0A1B40;
+
+                        a {
+                            color: #0A1B40;
+                        }
+                    }
+            }
+        }
+}
+
+.move-down {
+    margin-top: 5em;
+}
+
+
+
+#landing-main.outer-full {
+
+    .title.article-heading {
+        a {
+            font-size: 40px;
+        }
+    }
+
+    p.preview.bigger {
+        font-size: 24px;
+        font-family: raleway;
+    }
+
+    p.article-txt {
+        font-size: 18px;
+        font-family: raleway;
+    }
+
+    h2 {
+        font-weight: 800;
+    }
+
+    .article-img {
+        width: 100%;
+        height: 300px;
+        max-height: 229px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .pad-zero {
+        padding: 0;
+    }
+
+    button.goto-cat {
+        background: linear-gradient(
+                    rgba(10,27,64,.5),
+                    rgba(10,27,64,.5)
+        ),        
+                url('https://images.pexels.com/photos/559878/pexels-photo-559878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 0;
+        padding: 1em;
+        color: #fff;
+        display: block;
+        margin-top: 2em;
+        transition: all .2s;
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+        span.goto-cat--link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: raleway;
+            font-size: 2.2em;
+            font-weight: 800;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+button.goto-rentals {
+    transition: all .2s;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.x-marge-b {
+    margin-bottom: 2em;
+}
+
+
+// big screen = 1200px +
+
+        //from this size onwards use the regular styles and add the sidebar
+
+// normal desktop = min 900px + max 1200px
+
+        // make everything a bit smaller and take away the sidebar
+        // center the content
+        // decrease font size
+
+// big tablet = 768px min and max 900px
+
+        // set everything to be 100% 
+
+// tablet and mobile = 768px and below 
+
+
+@media screen and (min-width: 1200px) {
+    .hero-landing {
+        .inner-txt {
+
+        h2 {
+            font-size: 5em;
+            width: 80%;
+            text-align: left;
+        }
+
+        button.read-more {
+            margin: 0;
+        }
+     }
+   }   
+}
+
+@media screen and (min-width: 860px) and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-landing {
+        .inner-txt {
+
+        h2 {
+            font-size: 3em;
+            width: 100%;
+        }
+
+        button.read-more {
+            margin: auto;
+            margin-top: 1em;
+        }
+     }
+   } 
+}
+
+@media screen and (min-width: 710px) and (max-width: 767px) {
+    .menu {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #landing-main.outer-full {
+            padding: 1em;
+
+        .title.article-heading {
+            a {
+                font-size: 20px;
+            }
+        }
+    
+        p.preview.bigger {
+            font-size: 17px;
+            font-family: raleway;
+        }
+    
+        p.article-txt {
+            font-size: 14px;
+            font-family: raleway;
+        }
+    
+        h2 {
+            font-weight: 800;
+        }
+    }
+    
+}

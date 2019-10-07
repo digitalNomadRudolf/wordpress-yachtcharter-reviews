@@ -1,0 +1,140 @@
+.sub-header {
+    background: linear-gradient(
+        rgba(10,27,64,.5),
+        rgba(10,27,64,.5)
+    ),    
+      url('https://images.unsplash.com/photo-1552160757-52790c6f4faf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80') no-repeat;
+    height: 35vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.yt-destinations {
+    margin-top: -11.5em;
+}
+
+.margin-below {
+    margin-bottom: 4em;
+}
+
+.makemewhite {
+    color:#fff;
+}
+
+.padding-below {
+    padding-bottom: 3em;
+}
+
+// newsletter section 
+.newsletter-bg {
+    display: flex;
+    background: #47A3DA;
+    padding: 2em;
+
+        .left-part {
+            width: 40%;
+            font-family: roboto slab;
+            padding: 1em;
+
+                h1 {
+                    color: #fff;
+                    font-size: 2em;
+                }
+
+                p {
+                    color: white;
+                    font-size: .9em;
+                }
+        }
+
+        .right-part {
+            width: 60%;
+            align-self: center;
+            position: relative;
+
+                input#news-signup {
+                    width:100%;
+                    padding: .5em;
+                    border: 0;
+                }
+
+                button.sub-news-btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    border: 0;
+                    background: #0A1B40;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 0 2em;
+                }
+        }
+
+}
+
+.yt-latest__col {
+    margin-bottom: 2em;
+}
+
+.navigation-wrap {
+    width: 100%;
+}
+
+.row.page-navigation {
+    padding: 1em;
+    background: #0A1B40;
+    font-size: 1.2em;
+    margin-left: 1em;
+    transition: all .2s;
+    float: left;
+
+        &:hover {
+            background: #47A3DA;
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &.newer {
+            float: right;
+            margin-right: 15px;
+
+        }
+
+        
+}
+.row.page-navigation.newer:empty {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter-bg {
+        display: block;
+
+        .left-part {
+            width: 100%;
+        }
+
+        .right-part {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 868px) {
+    .title-col h1 {
+        letter-spacing: .4em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .title-col h1 {
+        letter-spacing: .1em;
+    }
+}

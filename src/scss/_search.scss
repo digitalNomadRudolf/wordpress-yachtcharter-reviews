@@ -1,0 +1,113 @@
+.search-bar {
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    outline: none;
+    float:right;
+
+        .search-wrap {
+            overflow: hidden;
+            float: right;
+            height: 2em;
+            width: 2em;
+            border-radius: .1em;
+            box-shadow: 0 0 5px #fff;
+            -moz-transition: all 0.35s;
+            -webkit-transition: all 0.35s;
+
+                &:hover, &:focus, &:focus-within {
+                    width: 12em;
+                    border-radius: .1em;
+                    outline: none;
+
+                    @media screen and (max-width: 768px) {
+                        width: 7em;
+                    }
+
+                        input {
+                            width: 10em;
+                            padding: .5em;
+
+                            @media screen and (max-width: 768px) {
+                                width: 5em;
+                            }
+                        }
+                }
+
+                &:hover input {
+                    width: 10em;
+                    padding: .5em;
+
+                    @media screen and (max-width: 768px) {
+                        width: 5em;
+                    }
+                }
+               
+            button.button {
+                float: right;
+                width: 1.12em;
+                height: 1em;
+                border: 0;
+                margin: -1.55em .28em;
+                background: #0A1B40;
+                text-align: center;
+                font-size: 1.3em;
+                color: #FDF6E3;
+                /* box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 1px rgba(0,0,0,0.25);
+                text-shadow: 0 -2px 1px rgba(0,0,0,0.3); */
+
+                    
+
+                    i {
+                        margin-top: 0.3em;
+
+                        &.icon-search:before {
+                            content: "\f002";
+                        }
+
+                        &:active {
+                            border: 0 !important;
+                            text-shadow: 0 0 0;
+                        }
+                    }
+            }
+
+            input {
+                display: inline-block;
+                width: 0px;
+                padding: 0px;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                height: 2em;
+                background: #fff;
+                color: #0A1B40;
+                font-size: 1em;
+                font-weight: 600;
+                border: 0;
+                box-shadow: 0 1px 5px rgba(0,0,0,0.2) inset;
+                text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+                -moz-transition: all 0.25s;
+                -webkit-transition: all 0.25s;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: 0 -1px 1px rgba(255,255,255,0.25), 0 1px 5px rgba(0,0,0,0.15);
+                        }
+                    
+            }
+        }
+}
+
+[class^=icon-]:before, [class*=" icon-"]:before {
+    font-family: FontAwesome;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+}
+  
+
+h3.foundPosts {
+    display: none;
+}

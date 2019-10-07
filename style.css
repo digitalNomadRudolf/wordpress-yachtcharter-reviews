@@ -1,0 +1,23 @@
+/* 
+Theme Name: Yacht Charter Reviews
+Author: digital Nomad Rudolf
+Author URI: http://localhost
+Description: Scale the oceans. Find the best Charters
+Version: 1.0
+*/
+
+*,
+:after,
+:before {
+  box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  font-family: 'Josefin Sans', sans-serif; }
+
+a {
+  cursor: pointer; }
